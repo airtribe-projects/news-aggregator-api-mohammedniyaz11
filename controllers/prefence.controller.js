@@ -1,6 +1,4 @@
 const Preference = require("../models/Prefernce");
-
-// POST /preferences (Create)
 exports.createPreference = async (req, res) => {
   try {
     const { categories, languages } = req.body;
