@@ -6,7 +6,7 @@ const {
     createPreference,
     getPreference,
     updatePreference
-} = require("../controllers/prefenceController");
+} = require("../controllers/prefence.controller");
 
 router.post("/", authMiddleware, createPreference);
 router.get("/", authMiddleware, getPreference);

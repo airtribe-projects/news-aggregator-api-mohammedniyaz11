@@ -5,8 +5,8 @@ const {connectDB}=require("./db")
 
 connectDB()
 
-const authRoutes = require("./routes/authRoutes");
-const preferenceRoutes = require("./routes/prefernceRoute");
+const authRoutes = require("./routes/auth.route");
+const preferenceRoutes = require("./routes/prefernce.route");
 app.use(express.json());
 
 app.use("/api/auth", authRoutes);
