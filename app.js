@@ -7,10 +7,14 @@ connectDB()
 
 const authRoutes = require("./routes/auth.route");
 const preferenceRoutes = require("./routes/prefernce.route");
+const newsRoutes = require("./routes/news.route");
+
+;
 app.use(express.json());
 
 app.use("/api/auth", authRoutes);
 app.use("/api/preferences", preferenceRoutes);
+app.use("/api/news", newsRoutes)
 
 
 // app.use(express.urlencoded({ extended: true }));
